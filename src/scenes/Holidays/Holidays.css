@@ -1,0 +1,28 @@
+/* Remove highlight for today's date and 1st day of the month */
+.react-calendar__tile--now {
+  background: none !important; /* Removes the default blue background */
+  color: inherit !important; /* Reset the color */
+}
+
+/* Custom class for dates we don't want to highlight */
+.no-highlight {
+  background: none !important;
+  color: inherit !important;
+}
+
+/* Custom class for selected dates */
+.selected-date {
+  background-color: #29c52e !important; /* Orange for selected dates */
+  color: white !important;
+}
+
+/* Custom class for holidays */
+.holiday-date {
+  background-color: #ff1744 !important; /* Red for holidays */
+  color: white !important;
+}
+
+.react-calendar {
+  width: 85%; /* Make the calendar take up the full width of its container */
+  font-size: 1.1rem; /* Increase the font size */
+}
